@@ -7,6 +7,51 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    /* palette couleur */
+    --main-white: #dddddd;
+    --shade-white: #d3d3d3;
+    --main-black: #181818;
+    --main-yellow: #e6d28c;
+    --dark-yellow: #f4cb38;
+
+    /* Fonts */
+    --base-font: Open sans, sans-serif;
+    --title-font: Abril, serif;
+
+    /* Font-size */
+    --text-sm: 1.4rem;
+    --text-base: 1.6rem;
+    --text-md: 1.8rem;
+    --text-lg: 2rem;
+    --text-xl: 2.4rem;
+    --text-2xl: 3rem;
+    --text-3xl: 3.6rem;
+    --text-4xl: 4.2rem;
+    --text-5xl: 5rem;
+    --text-6xl: 6rem;
+    --text-7xl: 7.2rem;
+
+    /* Spacing */
+    --space-1: 0.1rem;
+    --space-2: 0.2rem;
+    --space-4: 0.4rem;
+    --space-6: 0.6rem;
+    --space-8: 0.8rem;
+    --space-10: 1rem;
+    --space-12: 1.2rem;
+    --space-16: 1.6rem;
+    --space-20: 2rem;
+    --space-28: 2.8rem;
+    --space-36: 3.6rem;
+    --space-44: 4.4rem;
+    --space-52: 5.2rem;
+    --space-60: 6rem;
+    --space-72: 7.2rem;
+    --space-84: 8.4rem;
+    --space-96: 9.6rem;
+}
+
 html {
     font-size: 10px;
 }
@@ -14,15 +59,14 @@ body {
     margin: 0;
     font-family: "lato", sans-serif;
     background-color: #f7f7f7;
-
 }
 /* Navigation */
-.navigation{
+.navigation {
     background-color: #f0ead6;
     text-align: center;
     height: 10rem;
 }
-.navigation a{
+.navigation a {
     font-size: 3rem;
     padding: 1rem 5rem;
 }
