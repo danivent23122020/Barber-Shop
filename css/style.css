@@ -16,10 +16,11 @@
     --dark-yellow: #f4cb38;
 
     /* Fonts */
-    --base-font: Open sans, sans-serif;
-    --title-font: Abril, serif;
+    --base-font: Lato, sans-serif;
+    --title-font: Kaushan Script, serif;
 
     /* Font-size */
+    --text-title: calc(3rem + 4vw);
     --text-sm: 1.4rem;
     --text-base: 1.6rem;
     --text-md: 1.8rem;
@@ -53,11 +54,11 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
 }
 body {
     margin: 0;
-    font-family: "lato", sans-serif;
+    font-family: var(--base-font);
     background-color: #f7f7f7;
 }
 /* Navigation */
@@ -69,4 +70,10 @@ body {
 .navigation a {
     font-size: 3rem;
     padding: 1rem 5rem;
+}
+h1 {
+    text-align: center;
+    /* font-size: var(--text-5xl); */
+    font-size: var(--text-title);
+    font-family: var(--title-font);
 }
