@@ -35,7 +35,7 @@
         <!-- Script js -->
         <script src="./js/app.js" defer></script>
         <!-- Styles Sheet -->
-        <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
+        <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Barber</title>
     </head>
@@ -51,9 +51,10 @@
                         data-bs-target="#navbarNavAltMarkup"
                         aria-controls="navbarNavAltMarkup"
                         aria-expanded="false"
-                        aria-label="Toggle navigation"
+                        aria-label="Ouvrir et fermer le menu de navigation"
                     >
-                        <span class="navbar-toggler-icon"></span>
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <img src="./img/hamburger.svg" alt="icone hamburger" />
                     </button>
                     <div
                         class="collapse navbar-collapse"
@@ -67,7 +68,9 @@
                                 >Accueil</a
                             >
                             <a class="nav-link" href="#about">Nos Valeurs</a>
-                            <a class="nav-link" href="#prestations">Prestations</a>
+                            <a class="nav-link" href="#prestations"
+                                >Prestations</a
+                            >
                             <a class="nav-link" href="#contact">Contact</a>
                         </div>
                     </div>
@@ -78,20 +81,49 @@
                 <h1>Votre Barbier Traditionnel</h1>
                 <p>Rasoir, Peigne et Savoir-faire</p>
                 <a href="#prestations" class="hero-link hero-link-1"
-                    ><span>Prestations 🪒</span>
+                    ><span>Prestations</span>
+                    <img src="./img/pack/010-electric.svg" alt="rasoir" />
                 </a>
                 <a href="#contact" class="hero-link hero-link-2"
-                    ><span>Prestations ✂️</span>
+                    ><span>Contact</span>
+                    <img src="./img/pack/003-location-pin.svg" alt="ciseaux" />
                 </a>
-                <a href="#about" class="push-down-hero"
-                    ><span">🔽</span>
+                <!-- link down -->
+                <a href="#about" class="push-down-hero">
+                    <img src="./img/chevron-down.svg" alt="icone vers le bas" />
                 </a>
             </div>
         </header>
-        <!-- Section -->
-        <section id="about" class="pt-5">
-            <h1>Nos valeurs</h1>
-        </section>
+        <!--------- btn scroll up ------------->
+        <div class="btn-scrollup">
+            <img src="./img/scrollUp.png" class="icone" />
+        </div>
+        <!-- main contain -->
+        <main>
+            <!-- Section about -->
+            <section id="about" class="about pt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <h2>
+                                <span>Un style intemporel</span>
+                                <img
+                                    src="./img/pack/004-barber-1.svg"
+                                    alt="icone salon de coiffure"
+                                />
+                            </h2>
+                            <p>
+                                <span>Un style intemporel</span>
+                                <img
+                                    src="./img/pack/004-barber-1.svg"
+                                    alt="icone salon de coiffure"
+                                />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <!-- Bootstrap - JavaScript Bundle with Popper -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
