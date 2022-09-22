@@ -23,6 +23,7 @@
     /* Font-size */
     --size-title: calc(3rem + 4vw);
     --size-sub-title: calc(1.5rem + 3vw);
+    --size-section-title: calc(1.5rem + 2vw);
     --text-sm: 1.4rem;
     --text-base: 1.6rem;
     --text-md: 1.8rem;
@@ -57,10 +58,9 @@
 
 html {
     font-size: 62.5%;
-    behavior: "smooth",
+    behavior: "smooth";
 }
 body {
-    margin: 0;
     font-family: var(--font-base);
     background-color: #f7f7f7;
 }
@@ -69,28 +69,36 @@ body {
     width: 100%;
     height: 95vh;
 }
+.container{
+    max-width: 1100px;
+}
 /* Navigation */
 .navigation {
+    width: 100%;
+    height: var(--space-96);
     background-color: #f0ead6;
     text-align: center;
-    height: 10rem;
 }
-.navigation a {
-    font-size: 3rem;
-    padding: 1rem 5rem;
+/* setting navbar-brand */
+.navbar-brand {
+    color: var(--main-black) !important;
+    font-size: 45px !important ;
+    font-family: "Kaushan Script" !important;
+    transition: all 0.4s ease;
 }
-/* setting hero */
-.hero h1 {
-    text-align: center;
-    font-size: var(--size-title);
-    font-family: var(--font-title);
-    color: var(--main-black);
+.navbar-nav {
+    margin-left: auto;
 }
-.hero p {
-    text-align: center;
-    font-size: var(--size-sub-title);
-    font-family: var(--font-base);
-    color: var(--main-black);
+.nav-item {
+    margin-right: var(--space-20);
+}
+/* setting a */
+.nav-link {
+    color: var(--main-black) !important;
+    font-family: "Lato" !important;
+    font-size: var(--text-xl);
+    font-weight: 600;
+    /* transition: all 0.4s ease; */
 }
 /* seting button hamburger nav */
 /* to do faire anim avec la croix */
@@ -143,13 +151,69 @@ nav button img {
         opacity: 1;
     }
 }
-/* section about */
+/* === global utilities class === */
+/* setting h1 h2 p */
+.main-title {
+    color: var(--main-white);
+    font-family: var(--font-title);
+    font-size: var(--size-title);
+    font-weight: 500;
+}
+.sub-title {
+    color: var(--shade-white);
+    font-family: var(--sub-title);
+    font-size: var(--size-sub-title);
+    font-weight: 300;
+}
+.section-title {
+    font-family: var(--font-title);
+    font-size: var(--size-section-title);
+    font-weight: 300;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+}
+.section-title img {
+    width: var(--text-6xl);
+    margin-left: var(--space-16);
+}
+.section-sub-title {
+    font-size: var(--text-xl);
+    text-align: center;
+    margin: var(--space-72) 0;
+}
+.heading-h3 {
+    display: flex;
+    align-items: center;
+    font-size: var(--text-lg);
+}
+.heading-h3 img {
+    width: var(--text-6xl);
+    margin-right: var(--space-6);
+}
+.heading-h4 {
+    font-size: var(--text-lg);
+}
+.heading-h3,
+.heading-h4 {
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* === section about === */
 #about {
     width: 100%;
     height: 95vh;
 }
-#about h1 {
-    text-align: center;
-    font-size: var(--text-title);
-    font-family: var(--title-font);
+img {
+    width: 50px;
 }

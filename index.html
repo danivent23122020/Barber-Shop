@@ -37,13 +37,15 @@
         <!-- Styles Sheet -->
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/style.css" />
-        <title>Barber</title>
+        <title>Barber Shop</title>
     </head>
     <body>
         <header id="home">
             <nav class="navbar navbar-expand-lg navbar-light navigation">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#home">Barber</a>
+                <div
+                    class="container"
+                >
+                    <a class="navbar-brand" href="#home">Barber Shop</a>
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -60,26 +62,36 @@
                         class="collapse navbar-collapse"
                         id="navbarNavAltMarkup"
                     >
-                        <div class="navbar-nav">
-                            <a
-                                class="nav-link active"
-                                aria-current="page"
-                                href="#home"
-                                >Accueil</a
-                            >
-                            <a class="nav-link" href="#about">Nos Valeurs</a>
-                            <a class="nav-link" href="#prestations"
-                                >Prestations</a
-                            >
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="#home"
+                                    >Accueil</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about"
+                                    >Nos Valeurs</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#prestations"
+                                    >Prestations</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
             <!-- Contenu -->
             <div class="hero">
-                <h1>Votre Barbier Traditionnel</h1>
-                <p>Rasoir, Peigne et Savoir-faire</p>
+                <h1 class="main-title">Votre Barbier Traditionnel</h1>
+                <p class="sub-title">Rasoirs, Peignes et Savoir-faire</p>
                 <a href="#prestations" class="hero-link hero-link-1"
                     ><span>Prestations</span>
                     <img src="./img/pack/010-electric.svg" alt="rasoir" />
@@ -102,19 +114,21 @@
         <main>
             <!-- Section about -->
             <section id="about" class="about pt-5">
-                <h2>
-                    <span>Un style intemporel</span>
+                <h2 class="section-title">
+                    <span>Un style intemporel </span>
                     <img
                         src="./img/pack/004-barber-1.svg"
                         alt="icone salon de coiffure"
                     />
                 </h2>
-                <p>Patience et expertise à votre service</p>
+                <p class="section-sub-title">
+                    Patience et expertise à votre service
+                </p>
                 <div class="container about-content">
                     <div class="row">
                         <!-- col left -->
                         <div class="col-lg-6 about-text">
-                            <h3>
+                            <h3 class="heading-h3">
                                 <img
                                     src="./img/pack/024-shave.svg"
                                     alt="produit capillaire"
@@ -128,7 +142,7 @@
                                 praesentium porro, rerum nemo architecto sequi
                                 dolores.
                             </p>
-                            <h3>
+                            <h3 class="heading-h3">
                                 <img
                                     src="./img/pack/001-barber.svg"
                                     alt="coiffeur au travail"
