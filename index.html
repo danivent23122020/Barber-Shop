@@ -41,10 +41,8 @@
     </head>
     <body>
         <header id="home">
-            <nav class="navbar navbar-expand-lg navbar-light navigation">
-                <div
-                    class="container"
-                >
+            <nav class="navbar navbar-expand-lg fixed-top navigation">
+                <div class="container">
                     <a class="navbar-brand" href="#home">Barber Shop</a>
                     <button
                         class="navbar-toggler"
@@ -89,23 +87,30 @@
                 </div>
             </nav>
             <!-- Contenu -->
-            <div class="hero">
-                <h1 class="main-title">Votre Barbier Traditionnel</h1>
-                <p class="sub-title">Rasoirs, Peignes et Savoir-faire</p>
-                <a href="#prestations" class="hero-link hero-link-1"
-                    ><span>Prestations</span>
-                    <img src="./img/pack/010-electric.svg" alt="rasoir" />
-                </a>
-                <a href="#contact" class="hero-link hero-link-2"
-                    ><span>Contact</span>
-                    <img src="./img/pack/003-location-pin.svg" alt="ciseaux" />
-                </a>
-                <!-- link down -->
-                <a href="#about" class="push-down-hero">
-                    <img src="./img/chevron-down.svg" alt="icone vers le bas" />
-                </a>
+            <div
+                class="hero d-flex flex-column align-items-center justify-content-center"
+            >
+                <h1 class="main-title text-center">Votre Barbier Traditionnel</h1>
+                <p class="sub-title mt-3">Rasoirs, Peignes et Savoir-faire</p>
+                <div class="btn-hero mt-5">
+                    <a href="#prestations" class="hero-link hero-link-1"
+                        ><span>Prestations</span>
+                        <img src="./img/pack/010-electric.svg" alt="rasoir" />
+                    </a>
+                    <a href="#contact" class="hero-link hero-link-2"
+                        ><span>Contact</span>
+                        <img
+                            src="./img/pack/003-location-pin.svg"
+                            alt="ciseaux"
+                        />
+                    </a>
+                </div>
             </div>
         </header>
+        <!-------- Link down ------->
+        <a href="#about" class="push-down-hero">
+            <img src="./img/chevron-down.svg" alt="icone vers le bas" />
+        </a>
         <!--------- btn scroll up ------------->
         <div class="btn-scrollup">
             <img src="./img/scrollUp.png" class="icone" />

@@ -17,12 +17,12 @@
     --dark-yellow: #f4cb38;
 
     /* Fonts */
-    --font-base: Lato, sans-serif;
     --font-title: Kaushan Script, serif;
+    --font-base: Lato, sans-serif;
 
     /* Font-size */
     --size-title: calc(3rem + 4vw);
-    --size-sub-title: calc(1.5rem + 3vw);
+    --size-sub-title: calc(1.5rem + 2vw);
     --size-section-title: calc(1.5rem + 2vw);
     --text-sm: 1.4rem;
     --text-base: 1.6rem;
@@ -64,20 +64,20 @@ body {
     font-family: var(--font-base);
     background-color: #f7f7f7;
 }
-/* === Header === */
+/* === Header / Nav === */
 #home {
     width: 100%;
     height: 95vh;
 }
-.container{
+.container {
     max-width: 1100px;
 }
-/* Navigation */
+/* setting Navigation */
 .navigation {
     width: 100%;
-    height: var(--space-96);
-    background-color: #f0ead6;
-    text-align: center;
+    padding: var(--space-16);
+    background-color: var(--main-yellow);
+    border-bottom: 1px solid var(--main-black);
 }
 /* setting navbar-brand */
 .navbar-brand {
@@ -86,21 +86,34 @@ body {
     font-family: "Kaushan Script" !important;
     transition: all 0.4s ease;
 }
+/* setting ul */
 .navbar-nav {
     margin-left: auto;
 }
+/* setting li */
 .nav-item {
     margin-right: var(--space-20);
 }
 /* setting a */
 .nav-link {
     color: var(--main-black) !important;
-    font-family: "Lato" !important;
+    font-family: var(--font-base) !important;
     font-size: var(--text-xl);
-    font-weight: 600;
-    /* transition: all 0.4s ease; */
+    font-weight: 400;
+    padding: var(--space-10) var(--space-20);
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: underline dotted;
+    text-decoration-style: dotted;
+    text-underline-offset: 6px;
 }
-/* seting button hamburger nav */
+.nav-link:hover {
+    color: #fff !important;
+    background-color: #b8860b;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
+}
+/* setting button hamburger nav */
 /* to do faire anim avec la croix */
 nav button img {
     width: var(--text-3xl);
@@ -209,6 +222,66 @@ main {
     margin: 0 auto;
 }
 
+/* setting section hero */
+.hero {
+    height: 95vh;
+    min-height: 750px;
+    /* padding-top: 200px; */
+    background-image: url(../img/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 10%;
+    position: relative;
+}
+.hero-link {
+    min-width: 15.5rem;
+    padding: var(--space-8) var(--space-12);
+    font-size: var(--text-xl);
+    font-family: var(--font-base);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--main-black);
+    border-radius: 5px;
+    text-decoration: none;
+}
+.hero-link-1 {
+    background-color: var(--main-yellow);
+}
+.hero-link-1:hover {
+    color: var(--main-black);
+    background-color: var(--dark-yellow);
+}
+.hero-link-2 {
+    background-color: var(--main-white);
+    margin-left: var(--space-12);
+}
+.hero-link-2:hover {
+    color: var(--main-dark);
+    background-color: var(--shade-white);
+}
+.hero-link span {
+    text-decoration: underline dotted;
+    text-underline-offset: 5px;
+    text-decoration-color: var(--main-black);
+}
+.hero-link img {
+    width: var(--text-xl);
+    margin-left: var(--space-4);
+}
+/* important */
+.hero-link span,
+.hero-link img {
+    pointer-events: none;
+}
+
+
+/* === btn push-down-hero === */
+.push-down-hero {
+    display: none;
+}
 /* === section about === */
 #about {
     width: 100%;
