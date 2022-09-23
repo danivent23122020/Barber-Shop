@@ -197,7 +197,7 @@ nav button img {
 .section-sub-title {
     font-size: var(--text-xl);
     text-align: center;
-    margin: var(--space-72) 0;
+    margin: var(--space-20) 0 var(--space-36);
 }
 .heading-h3 {
     display: flex;
@@ -217,10 +217,10 @@ nav button img {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-main {
+/* main {
     max-width: 1100px;
     margin: 0 auto;
-}
+} */
 
 /* setting section hero */
 .hero {
@@ -277,7 +277,6 @@ main {
     pointer-events: none;
 }
 
-
 /* === btn push-down-hero === */
 .push-down-hero {
     display: none;
@@ -286,7 +285,38 @@ main {
 #about {
     width: 100%;
     height: 95vh;
+    background: var(--main-white);
 }
-img {
-    width: 50px;
+/* col left */
+.about-text p {
+    color: var(--main-black);
+    font-size: var(--text-md);
+    font-family: var(--font-base);
+    letter-spacing: 0.5px;
+    padding-bottom: var(--space-10);
+    border-bottom: 1px solid var(--main-black);
 }
+
+/* col right */
+.about-slide-show {
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+/* === section prestation === */
+#prestations {
+    width: 100%;
+    height: 95vh;
+    background: var(--main-white);
+}
+/* col left */
+.about-text p {
+    color: var(--main-black);
+    font-size: var(--text-md);
+    font-family: var(--font-base);
+    letter-spacing: 0.5px;
+    padding-bottom: var(--space-10);
+    border-bottom: 1px solid var(--main-black);
+}
+
+/* col right */
+
