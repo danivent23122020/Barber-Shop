@@ -15,7 +15,7 @@
             rel="stylesheet"
         />
         <link
-            href="https://fonts.googleapis.com/css?family=Lato"
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,900&display=swap"
             rel="stylesheet"
         />
         <!-- CSS Bootstrap -->
@@ -77,6 +77,11 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#prestations"
                                     >Prestations</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#aboutus"
+                                    >Notre équipe</a
                                 >
                             </li>
                             <li class="nav-item">
@@ -246,10 +251,18 @@
                 </h2>
                 <p class="section-sub-title">À la carte</p>
                 <div class="container prestations-content">
-                    <div class="row">
+                    <div class="row justify-content-around">
                         <!-- col left -->
-                        <div class="col-lg-6">
-                            <h3 class="section-title">Le Visage</h3>
+                        <div
+                            class="col-lg-6 prestations-card prestations-card-left"
+                        >
+                            <h3 class="section-title black-title">
+                                <span>Le Visage</span>
+                                <img
+                                    src="./img/pack/002-barber-pole.svg"
+                                    alt="icone salon de coiffure"
+                                />
+                            </h3>
                             <ul class="prestations-list">
                                 <li>
                                     <h4 class="heading-h4">
@@ -260,6 +273,7 @@
                                         <strong>taille de la moustache</strong>.
                                     </p>
                                     <p><em>Durée 30 minutes</em>.</p>
+                                    <hr />
                                 </li>
                                 <li>
                                     <h4 class="heading-h4">
@@ -273,6 +287,7 @@
                                         <strong>nez</strong>.
                                     </p>
                                     <p><em>Durée 30 minutes</em>.</p>
+                                    <hr />
                                 </li>
                                 <li>
                                     <h4 class="heading-h4">
@@ -281,12 +296,12 @@
                                     <p>
                                         Rasage classique
                                         <strong>traditionnel</strong> au
-                                        <strong>coupe choux</strong>(rasoir
-                                        droit).
+                                        <strong>coupe choux</strong>.
                                     </p>
                                     <p>
                                         <em> Durée 45 minutes. </em>
                                     </p>
+                                    <hr />
                                 </li>
                                 <li>
                                     <h4 class="heading-h4">
@@ -303,9 +318,17 @@
                             </ul>
                         </div>
                         <!-- col right -->
-                        <div class="col-lg-6 mt-2">
+                        <div
+                            class="col-lg-6 prestations-card prestations-card-right"
+                        >
                             <div>
-                                <h3 class="section-title">La Coupe</h3>
+                                <h3 class="section-title black-title">
+                                    <span>La Coupe</span>
+                                    <img
+                                        src="./img/pack/023-scissors.svg"
+                                        alt="icone salon de coiffure"
+                                    />
+                                </h3>
                             </div>
                             <ul class="prestations-list">
                                 <li>
@@ -318,6 +341,7 @@
                                         <strong>coiffage</strong>.
                                     </p>
                                     <p><em>Durée 45mins</em></p>
+                                    <hr />
                                 </li>
                                 <li>
                                     <h4 class="heading-h4">
@@ -328,6 +352,7 @@
                                         <strong>soins</strong>.
                                     </p>
                                     <p><em>Durée 45 minutes</em></p>
+                                    <hr />
                                 </li>
                                 <li>
                                     <h4 class="heading-h4">UNDERCUT - 25€</h4>
@@ -336,6 +361,7 @@
                                         <strong>dégradé à l’ancienne</strong>.
                                     </p>
                                     <p><em>Durée 45 minutes.</em></p>
+                                    <hr />
                                 </li>
                                 <li>
                                     <h4 class="heading-h4">
@@ -347,6 +373,64 @@
                                     </p>
                                     <p><em>Durée 45 minutes</em></p>
                                 </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!----------- Section about us --------->
+            <section
+                id="aboutus"
+                class="aboutus d-flex flex-column align-items-center justify-content-center"
+            >
+                <h2 class="section-title">
+                    <span>Notre équipe</span>
+                    <img
+                        src="./img/pack/022-brush.svg"
+                        alt="pinceau de coiffure"
+                    />
+                </h2>
+                <p class="section-sub-title">
+                    5 années d'expérience à votre service
+                </p>
+                <div class="container prestations-content">
+                    <div class="row justify-content-around">
+                        <!-- col left -->
+                        <div
+                            class="col-lg-6 prestations-card prestations-card-left"
+                        >
+                            <h3 class="section-title black-title">
+                                <span>Le Visage</span>
+                                <img
+                                    src="./img/pack/002-barber-pole.svg"
+                                    alt="icone salon de coiffure"
+                                />
+                            </h3>
+                            <ul class="aboutus-list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <!-- col right -->
+                        <div
+                            class="col-lg-6 prestations-card prestations-card-right"
+                        >
+                            <div>
+                                <h3 class="section-title black-title">
+                                    <span>La Coupe</span>
+                                    <img
+                                        src="./img/pack/023-scissors.svg"
+                                        alt="icone salon de coiffure"
+                                    />
+                                </h3>
+                            </div>
+                            <ul class="aboutus-list">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                         </div>
                     </div>
