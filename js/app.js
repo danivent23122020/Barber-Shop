@@ -13,3 +13,23 @@ btn.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+// *** cookie modal ***
+let cookieModal = document.querySelector("#cookieModal");
+let acceptCookie = document.querySelector("#acceptCookie");
+let cancelCookie = document.querySelector("#refusedCookie");
+//
+cancelCookie.addEventListener("click", function () {
+    cookieModal.classList.remove("active");
+});
+//
+acceptCookie.addEventListener("click", function () {
+    cookieModal.classList.remove("active");
+    localStorage.setItem("cookieAccepted", "yes");
+});
+
+setTimeout(function () {
+    let cookieAccepted = localStorage.getItem("cookieAccepted");
+    if(cookieAccepted != 'yes'){
+        cookieModal.classList.add("active");
+    }
+}, 2000);
