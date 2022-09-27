@@ -23,13 +23,46 @@ cancelCookie.addEventListener("click", function () {
 });
 //
 acceptCookie.addEventListener("click", function () {
+    let d = new Date();
+    d.setMinutes(2 + d.getMinutes());
+    document.cookie = "Barbershop=true; expires = ' + d + ';";
     cookieModal.classList.remove("active");
-    localStorage.setItem("cookieAccepted", "yes");
 });
 
-setTimeout(function () {
-    let cookieAccepted = localStorage.getItem("cookieAccepted");
-    if(cookieAccepted != 'yes'){
+// check cookie exist
+const checkCookie = () => {
+    let input = document.cookie.split("=");
+    if (input[0] == "Barbershop") {
+        cookieModal.classList.remove("active");
+    } else {
         cookieModal.classList.add("active");
     }
-}, 2000);
+};
+// check cookie exist page already load
+window.onload = () => {
+    setTimeout(() => {
+        checkCookie();
+    }, 1000);
+};
+//
+// test date
+let dateJour = Date.now();
+console.log(dateJour);
+console.log(dateJour / (1000 * 3600 * 24));
+
+function diffJoursDates(firstdate, seconddate) {
+    return (seconddate - firstdate) / (1000 * 3600 * 24);
+}
+let numDiff = diffJoursDates(new Date(2022, 09, 01), new Date(2022, 09, 27));
+console.log(numDiff);
+
+//
+const ladate = new Date();
+console.log("Nous sommes le : ");
+console.log(
+    ladate.getDate() +
+        "/" +
+        (ladate.getMonth() + 1) +
+        "/" +
+        ladate.getFullYear()
+);
