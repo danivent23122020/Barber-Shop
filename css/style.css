@@ -194,6 +194,7 @@ nav button img {
     width: var(--text-6xl);
     margin-left: var(--space-16);
 }
+/* responsive */
 @media screen and (max-width: 990px) {
     .section-title img {
         width: var(--text-4xl);
