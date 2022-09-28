@@ -304,7 +304,7 @@ nav button img {
 @media screen and (max-width: 990px) {
     #about {
         height: auto;
-        padding: var(--space-36) 0;
+        padding: var(--space-36) var(--space-20);
     }
     .about-slide-show {
         margin-top: var(--space-28);
