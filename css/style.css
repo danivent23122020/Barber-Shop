@@ -194,6 +194,11 @@ nav button img {
     width: var(--text-6xl);
     margin-left: var(--space-16);
 }
+@media screen and (max-width: 990px) {
+    .section-title img {
+        width: var(--text-4xl);
+    }
+}
 .section-sub-title {
     font-size: var(--text-xl);
     text-align: center;
