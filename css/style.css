@@ -309,10 +309,10 @@ nav button img {
         margin-top: var(--space-28);
     }
     .heading-h3 {
-        height: var(--space-84);
+        height: var(--space-72);
     }
     .about-text {
-        height: var(--space-72);
+        height: auto;
     }
 }
 
