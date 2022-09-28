@@ -13,6 +13,14 @@ btn.addEventListener("click", () => {
         behavior: "smooth",
     });
 });
+
+// *** animation resize navbar ***
+// condition animation
+window.addEventListener("scroll", function () {
+    let scroll = this.document.querySelector(".navbar");
+    scroll.classList.toggle("resize", window.scrollY > 30);
+});
+
 // *** cookie modal ***
 let cookieModal = document.querySelector("#cookieModal");
 let acceptCookie = document.querySelector("#acceptCookie");
