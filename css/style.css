@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
 } */
+
 /* === root/html === */
 :root {
     /* palette couleur */
@@ -64,6 +65,7 @@ body {
     font-family: var(--font-base);
     background-color: #f7f7f7;
 }
+
 /* === Header / Nav === */
 #home {
     width: 100%;
@@ -164,6 +166,7 @@ nav button img {
         opacity: 1;
     }
 }
+
 /* === global utilities class === */
 /* setting h1 h2 p */
 .main-title {
@@ -286,6 +289,7 @@ nav button img {
 .push-down-hero {
     display: none;
 }
+
 /* === section about === */
 #about {
     width: 100%;
@@ -396,10 +400,16 @@ nav button img {
         padding: var(--space-36) 0;
     }
     .prestations-card {
+        width: 60%;
         margin: 0 auto;
     }
     .prestations-card-right {
         margin-top: var(--space-16);
+    }
+}
+@media screen and (max-width: 990px) {
+    .prestations-card {
+        width: 90%;
     }
 }
 
