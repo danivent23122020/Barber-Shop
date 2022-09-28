@@ -226,10 +226,6 @@ nav button img {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-/* main {
-    max-width: 1100px;
-    margin: 0 auto;
-} */
 
 /* setting section hero */
 .hero {
@@ -283,11 +279,6 @@ nav button img {
 .hero-link span,
 .hero-link img {
     pointer-events: none;
-}
-
-/* === btn push-down-hero === */
-.push-down-hero {
-    display: none;
 }
 
 /* === section about === */
